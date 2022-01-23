@@ -1,0 +1,17 @@
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 2em;
+}
+
+.second-menu{
+    flex-direction: column;
+}
+
+#my-special-item{
+    background-color: rgb(43, 24, 127);
+}

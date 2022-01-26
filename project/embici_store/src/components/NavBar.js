@@ -1,7 +1,8 @@
 import React from "react";
 import {ReactComponent as Logo} from '../bike-logo.svg'
+import CartWidget from './CartWidget';
 
-export default function Menu() {
+export default function Menu({children}) {
     return (
         <nav class="flex items-center justify-between flex-wrap bg-sky-900 p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -25,9 +26,7 @@ export default function Menu() {
                     Insurance Plan
                 </a>
                 </div>
-                <div>
-                <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-                </div>
+                <CartWidget itemsAmount={5}/>
             </div>
 </nav>);
 }

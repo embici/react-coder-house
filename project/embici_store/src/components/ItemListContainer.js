@@ -38,7 +38,7 @@ const ItemListContainer = ({greeting='Lorem Ipsum'}) => {
                     </li>
                 </ul>
             </div> 
-            <ItemCount></ItemCount>
+            <ItemCount stock="4"></ItemCount>
         </div>
     );
 }

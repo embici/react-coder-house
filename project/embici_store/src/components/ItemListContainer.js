@@ -17,7 +17,7 @@ const ItemListContainer = ({greeting='Lorem Ipsum'}) => {
 
     return(
         <div>
-            <h2 className="text-4xl font-medium leading-tight mt-0 mb-2 text-blue-600">{greeting}</h2>
+            <h2 className="text-4xl font-medium leading-tight mt-0 mb-2 text-sky-900">{greeting}</h2>
             
             
             {products.length > 0 ? <ItemList products={products}/> : <p>Cargando ...</p>}

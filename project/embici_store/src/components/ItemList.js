@@ -7,7 +7,7 @@ const ItemList = ({products}) => {
         console.log(products)
     },[products]);
     return (
-        <div>
+        <div className="flex flex-col space-y-3 md:space-x-3 md:flex-row">
             {
                 products.map(product => { 
                     return (

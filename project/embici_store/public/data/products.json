@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Billetera",
+    "price": 55,
+    "stock": 53,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372706/billetera2C_bf0hvq.jpg",
+    "id": "61d9a43e5e2626b0af873199"
+  },
+  {
+    "name": "Riñonera camuflada",
+    "price": 100,
+    "stock": 6,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372707/rinonera4C_vk8crq.jpg",
+    "id": "61ddfdc19a56e7e64e0bfeab"
+  },
+  {
+    "name": "Remera verde",
+    "price": 250,
+    "stock": 5,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372707/remera4_wyfums.jpg",
+    "id": "61ddfddb9a56e7e64e0bfeae"
+  },
+  {
+    "name": "Remera blanca",
+    "price": 240,
+    "stock": 14,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372706/remera1_zhdmkj.jpg",
+    "id": "61ddfdf09a56e7e64e0bfeb1"
+  },
+  {
+    "name": "Gorra negra",
+    "price": 180,
+    "stock": 18,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372706/gorra4C_nyvjj6.jpg",
+    "id": "61ddfe059a56e7e64e0bfeb4"
+  },
+  {
+    "name": "Camisa lunares",
+    "price": 300,
+    "stock": 5,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372706/camisa4_ehruek.jpg",
+    "id": "61ddfe179a56e7e64e0bfeb7"
+  },
+  {
+    "name": "Camisa blanca",
+    "price": 450,
+    "stock": 6,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372705/camisa2_tmojul.jpg",
+    "id": "61ddfe2b9a56e7e64e0bfeba"
+  },
+  {
+    "name": "Billetera cuero",
+    "price": 56,
+    "stock": 11,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372705/billetera4C_jpsrxi.jpg",
+    "id": "61ddfe3b9a56e7e64e0bfebd"
+  },
+  {
+    "name": "Gorra azul y roja",
+    "price": 46,
+    "stock": 7,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372706/gorra1C_r0cz4b.jpg",
+    "id": "61ddfe519a56e7e64e0bfec0"
+  },
+  {
+    "name": "Riñonera beige",
+    "price": 200,
+    "stock": 9,
+    "img": "https://res.cloudinary.com/ericwaje/image/upload/v1619372707/rinonera1C_alnfaf.jpg",
+    "id": "61ddfe679a56e7e64e0bfec3"
+  }
+]

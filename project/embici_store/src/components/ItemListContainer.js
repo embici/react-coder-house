@@ -10,18 +10,13 @@ const ItemListContainer = ({greeting='Lorem Ipsum'}) => {
         //obtener los productos
         console.log('se ejecuta cuando se monta el componente, solo una vez');
         //Ir al backend y obtener un backend
-        getProducts().then((products)=>{
-            setProducts(products);
-        });
+        getProducts().then(data => setProducts(data));
     }, []);
 
     return(
         <div>
             <h2 className="text-4xl font-medium leading-tight mt-0 mb-2 text-sky-900">{greeting}</h2>
-            
-            
             {products.length > 0 ? <ItemList products={products}/> : <p>Cargando ...</p>}
-            
             <div className="bg-white rounded-lg shadow lg:w-1/3">
                 <ul className="divide-y divide-gray-100">
                     <li className="p-3 hover:bg-blue-600 hover:text-blue-200">

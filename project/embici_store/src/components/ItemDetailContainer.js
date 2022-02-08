@@ -12,11 +12,10 @@ const ItemDetailContainer = () => {
 
     useEffect(() =>{ 
         getProducts().then(data => setItems(data));
-        console.log(items[0]);
     },[]);
     return(
         <div className="">
-            <ItemDetail product={items[0]}/>
+            {items.length > 0 ? <ItemDetail product={items.filter(product => product.name === "Remera verde")}/>: <p>Cargando ...</p>}
         </div>
     )
 }

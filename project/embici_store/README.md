@@ -1,6 +1,6 @@
 # embici store
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/embici/react-coder-house/blob/main/project/embici_store/src/documentation/embici-store.gif)
 
 ## API mockup
 

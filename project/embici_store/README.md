@@ -3,6 +3,7 @@
 ## API mockup
 
 The API mockup for this project is a separate project and it can be found at https://github.com/embici/embici-api
+
 Once API is installed and started, the following URL will be running on a local server and will return data about the products
 http://localhost:3000/products/
 

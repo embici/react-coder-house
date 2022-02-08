@@ -1,3 +1,4 @@
+import {Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
@@ -7,11 +8,18 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div>
-      <NavBar/>
-      <ItemDetailContainer/>
-      <ItemListContainer greeting='Hola Mundo'/>
-    </div>
+      <div>
+        {/* Esto queda fijo */}
+        <NavBar/> 
+        {/* Esto cambia */}
+        <Routes>
+          <Route path="/" element={<ItemListContainer greeting='Hola Mundo'/>}/>
+          {/* shows items filtered by category */}
+          <Route path="/category/:categoryName" element={<ItemListContainer greeting='Categoria en especifico'/>}/>
+          <Route path="/item/:productId" element={<ItemDetailContainer/>}/>
+          <Route path="*" element={<div><h2>Page not found</h2><Link to="/">{'<< '}Back to Home</Link></div>}/>
+        </Routes>
+      </div>
   );
 }
 

@@ -4,18 +4,25 @@
 // 4. Pasarle ese producto al componente ItemDetail.js
 
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { getProducts } from "../api/api";
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
-    const [items, setItems] = useState([]);
+    const [item, setItem] = useState([]);
+    // useParams Hook react-router-dom --> obtiene parametros de la URL
+    // productId viene del URL
+    const {productId} = useParams();
 
     useEffect(() =>{ 
-        getProducts().then(data => setItems(data));
-    },[]);
+        getProducts().then(data => {
+            const currentItem = data.find(i  => i.id === productId); 
+            setItem(currentItem);
+        });
+    },[productId]);
     return(
         <div className="">
-            {items.length > 0 ? <ItemDetail product={items.filter(product => product.name === "Remera verde")}/>: <p>Cargando ...</p>}
+            {!item ? <p>Cargando producto...</p> : <ItemDetail product={item}/>}
         </div>
     )
 }

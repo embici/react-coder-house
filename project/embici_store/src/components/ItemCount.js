@@ -19,7 +19,7 @@ const ItemCount = (props) => {
         setCount(count + 1);
     }
     return(
-        <div className="custom-number-input flex flex-col h-10 w-32">
+        <div className="custom-number-input flex flex-col w-1/6 container">
             <label className="w-full text-gray-700 text-sm font-semibold">Item Name
             </label>
             <div className="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">

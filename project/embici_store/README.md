@@ -1,5 +1,7 @@
 # embici store
 
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 ## API mockup
 
 The API mockup for this project is a separate project and it can be found at https://github.com/embici/embici-api

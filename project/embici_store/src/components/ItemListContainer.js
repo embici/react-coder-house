@@ -1,17 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { getProducts } from "../api/api";
 import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
 
 const ItemListContainer = ({greeting='Lorem Ipsum'}) => {
     const [products, setProducts] = useState([]);
+    const {categoryName} = useParams();
     //cuando se monte este componente, buscar los productos
     useEffect(()=>{
         //obtener los productos
         console.log('se ejecuta cuando se monta el componente, solo una vez');
         //Ir al backend y obtener un backend
-        getProducts().then(data => setProducts(data));
-    }, []);
+        getProducts().then(data => {
+            if(!categoryName){
+                setProducts(data);
+            }else{
+                const itemsByCat = data.filter(item => item.category === categoryName);
+                setProducts(itemsByCat);
+            }
+        });
+    }, [categoryName]);
 
     return(
         <div>
@@ -33,7 +42,9 @@ const ItemListContainer = ({greeting='Lorem Ipsum'}) => {
                     </li>
                 </ul>
             </div> 
-            <ItemCount stock="4"></ItemCount>
+            <div className="container flex flex-row">
+                <ItemCount stock="4"></ItemCount>
+            </div>
         </div>
     );
 }
